@@ -41,6 +41,15 @@ public class FallaPolimorfismo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+         //Caratula
+       System.out.println("       UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE \n");
+       System.out.println("               Ingeniería  Automotriz ");
+       System.out.println("           Vega Masapanta Jessica Maribel");
+       System.out.println("         Programación Orientada  a Objetos ");
+       System.out.println("                        7450 ");
+       System.out.println("              Ing. Luis Alberto Guerra \n");
+       System.out.println("           \t Polimorfismo \n");
+
         Falla_Vehiculo falla1=new Sensor_Temperatura();
         Falla_Vehiculo falla2=new Sensor_Presion();
         Falla_Vehiculo falla3=new Valvula();
