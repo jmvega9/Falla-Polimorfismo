@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Diseñe e implemente un algoritmo que contenga una Super clase llamada
+Falla?Vehiculo y cuatro subclases llamadas: Sensor_Temperatura, Sensor_Presion,
+Valvula, FugaAire que contengan la función EmitirGolpeteo e imprima la pieza que
+tiene falla junto con el tipo de golpeteo que realiza
  */
 package fallapolimorfismo;
 
@@ -9,28 +10,28 @@ package fallapolimorfismo;
  *
  * @author VEGA MASAPANTA JESSICA MARIBEL
  */
-class Falla{
-    public void Golpetear(){
+class Falla_Vehiculo{
+    public void EmitirGolpeteo(){
         System.out.println("Tin tin");
     }
 }
-    class Temperatura extends Falla{
-        public void Golpetear(){
+    class Sensor_Temperatura extends Falla_Vehiculo{
+        public void EmitirGolpeteo(){
             System.out.println("Zzzzz...");
         }
     }
-    class Presion extends Falla{
-        public void Golpetear(){
+    class Sensor_Presion extends Falla_Vehiculo{
+        public void EmitirGolpeteo(){
             System.out.println("Din din");
         }
     }
-    class Valvula extends Falla{
-        public void Golpetear(){
+    class Valvula extends Falla_Vehiculo{
+        public void EmitirGolpeteo(){
             System.out.println("Dic dic");
         }
     }
-    class FugaAire extends Falla{
-        public void Golpetear(){
+    class FugaAire extends Falla_Vehiculo{
+        public void EmitirGolpeteo(){
             System.out.println("ziii...");
         }
     }
@@ -40,26 +41,26 @@ public class FallaPolimorfismo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Falla falla1=new Temperatura();
-        Falla falla2=new Presion();
-        Falla falla3=new Valvula();
-        Falla falla4=new FugaAire();
+        Falla_Vehiculo falla1=new Sensor_Temperatura();
+        Falla_Vehiculo falla2=new Sensor_Presion();
+        Falla_Vehiculo falla3=new Valvula();
+        Falla_Vehiculo falla4=new FugaAire();
 
         //OutPuts "Zzzz"
         System.out.println("El sensor que Falla es: Sensor de Temperatura");
-        falla1.Golpetear();
+        falla1.EmitirGolpeteo();
 
         //Outputs "Din din"
         System.out.println("El sensor que falla es: Sensor de Presión");
-        falla2.Golpetear();
+        falla2.EmitirGolpeteo();
 
         //Outputs "Dic dic"
         System.out.println("La válvula que falla es: Válvula EGR");
-        falla3.Golpetear();
+        falla3.EmitirGolpeteo();
 
         //Outputs "ZIII"
         System.out.println("La fuga de aire es: En los conductos de refrigeración");
-        falla4.Golpetear();
+        falla4.EmitirGolpeteo();
     }
 
 }
